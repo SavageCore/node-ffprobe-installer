@@ -6,7 +6,7 @@ const path = require('path');
 
 const platform = os.platform() + '-' + os.arch();
 
-const packageName = '@ffmpeg-installer/' + platform;
+const packageName = '@ffprobe-installer/' + platform;
 const version = require('./package.json').optionalDependencies[packageName];
 
 if (!version) {
@@ -14,11 +14,11 @@ if (!version) {
     process.exit(1);
 }
 
-const binary = platform === 'win32' ? 'ffmpeg.exe' : 'ffmpeg';
+const binary = platform === 'win32' ? 'ffprobe.exe' : 'ffprobe';
 
-const ffmpegPath = path.resolve(__dirname, '..', platform, binary);
+const ffprobePath = path.resolve(__dirname, '..', platform, binary);
 
 module.exports = {
-    path: ffmpegPath,
+    path: ffprobePath,
     version: version
 };

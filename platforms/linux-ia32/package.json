@@ -1,15 +1,15 @@
 {
-  "name": "@ffmpeg-installer/linux-ia32",
+  "name": "@ffprobe-installer/linux-ia32",
   "version": "3.1.3",
-  "description": "Linux FFmpeg binary used by ffmpeg-installer",
+  "description": "Linux FFmpeg binary used by ffprobe-installer",
   "homepage": "https://www.johnvansickle.com/ffmpeg/",
   "scripts": {
-    "test": "file ffmpeg | grep -qF \"ELF 32-bit\"",
+    "test": "file ffprobe | grep -qF \"ELF 32-bit\"",
     "prepublish": "npm test",
     "upload": "npm publish --access public"
   },
   "keywords": [
-    "ffmpeg",
+    "ffprobe",
     "binary",
     "linux",
     "ia32"
@@ -20,6 +20,6 @@
   "cpu": [
     "ia32"
   ],
-  "author": "Kristoffer Lundén <kristoffer.lunden@gmail.com>",
+  "author": "Oliver Sayers <talk@savagecore.eu>",
   "license": "LGPL-2.1"
 }

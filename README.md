@@ -1,37 +1,37 @@
-# node-ffmpeg-installer
+# node-ffprobe-installer
 
-Platform independent binary installer of [FFmpeg](https://ffmpeg.org/) for node projects. Useful for tools that should "just work" on multiple environments.
+Platform independent binary installer of [FFprobe](https://ffmpeg.org/) for node projects. Useful for tools that should "just work" on multiple environments.
 
-Installs a binary of `ffmpeg` for the current platform and provides a path and version. Supports Linux, Windows and Mac OS/X.
+Installs a binary of `ffprobe` for the current platform and provides a path and version. Supports Linux, Windows and Mac OS/X.
 
 A combination of package.json fields `optionalDependencies`, `cpu`, and `os` let's the installer only download the binary for the current platform.
 
 ## Install
 
-    npm install --save @ffmpeg-installer/ffmpeg
-    
+    npm install --save @ffprobe-installer/ffprobe
+
 ## Usage examples
 
 ```javascript
-const ffmpeg = require('@ffmpeg-installer/ffmpeg');
-console.log(ffmpeg.path, ffmpeg.version);
+const ffprobe = require('@ffprobe-installer/ffprobe');
+console.log(ffprobe.path, ffprobe.version);
 ```
 
 ### process.spawn()
 
 ```javascript
-const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
+const ffprobe = require('@ffprobe-installer/ffprobe').path;
 const spawn = require('child_process').spawn;
-const ffmpeg = spawn('ffmpeg', args);
-ffmpeg.on('exit', onExit);
+const ffprobe = spawn('ffprobe', args);
+ffprobe.on('exit', onExit);
 ```
 
 ### fluent-ffmpeg
 
 ```javascript
-const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
+const ffprobePath = require('@ffprobe-installer/ffprobe').path;
 const ffmpeg = require('fluent-ffmpeg');
-ffmpeg.setFfmpegPath(ffmpegPath);
+ffmpeg.setFfprobePath(ffprobePath);
 ```
 
 ## The binaries
@@ -47,6 +47,5 @@ For version updates, submit issue or pull request.
 ## Upload new versions
 
 In every updated `platforms/*` directory:
- 
+
     npm run upload
-    

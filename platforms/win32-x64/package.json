@@ -1,15 +1,15 @@
 {
-  "name": "@ffmpeg-installer/win32-x64",
+  "name": "@ffprobe-installer/win32-x64",
   "version": "3.0.1",
-  "description": "Windows FFmpeg binary used by ffmpeg-installer",
+  "description": "Windows FFprobe binary used by ffprobe-installer",
   "homepage": "https://ffmpeg.zeranoe.com/builds/",
   "scripts": {
-    "test": "file ffmpeg.exe | grep -qF \"PE32+\"",
+    "test": "file ffprobe.exe | grep -qF \"PE32+\"",
     "prepublish": "npm test",
     "upload": "npm publish --access public"
   },
   "keywords": [
-    "ffmpeg",
+    "ffprobe",
     "binary",
     "win32",
     "x64"
@@ -20,6 +20,6 @@
   "cpu": [
     "x64"
   ],
-  "author": "Kristoffer Lundén <kristoffer.lunden@gmail.com>",
+  "author": "Oliver Sayers <talk@savagecore.eu>",
   "license": "LGPL-2.1"
 }

@@ -6,16 +6,16 @@ const path = require('path');
 const test = require('tape');
 const semver = require('semver');
 
-const ffmpegInstaller = require('../index');
+const ffprobeInstaller = require('../index');
 
 const platform = os.platform() + '-' + os.arch();
-const binary = platform === 'win32' ? 'ffmpeg.exe' : 'ffmpeg';
+const binary = platform === 'win32' ? 'ffprobe.exe' : 'ffprobe';
 
 test('', (t) => {
-    //console.log(ffmpegInstaller.path);
-    //console.log(ffmpegInstaller.version);
+    //console.log(ffprobeInstaller.path);
+    //console.log(ffprobeInstaller.version);
 
-    t.equals(path.resolve(__dirname, '../..', platform, binary), ffmpegInstaller.path, 'Valid path');
-    t.true(semver.valid(ffmpegInstaller.version), 'Valid version number');
+    t.equals(path.resolve(__dirname, '../..', platform, binary), ffprobeInstaller.path, 'Valid path');
+    t.true(semver.valid(ffprobeInstaller.version), 'Valid version number');
     t.end();
 });
