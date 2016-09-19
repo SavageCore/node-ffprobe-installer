@@ -14,7 +14,7 @@ if (!version) {
     process.exit(1);
 }
 
-const binary = platform === 'win32' ? 'ffprobe.exe' : 'ffprobe';
+const binary = platform.indexOf('win32') !== -1 ? 'ffprobe.exe' : 'ffprobe';
 
 const ffprobePath = path.resolve(__dirname, '..', platform, binary);
 
