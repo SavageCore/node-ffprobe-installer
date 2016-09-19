@@ -1,15 +1,15 @@
 {
-  "name": "@ffmpeg-installer/darwin-x64",
+  "name": "@ffprobe-installer/darwin-x64",
   "version": "3.1.3",
-  "description": "Mac OS X FFmpeg binary used by ffmpeg-installer",
+  "description": "Mac OS X FFmpeg binary used by ffprobe-installer",
   "homepage": "https://evermeet.cx/ffmpeg/",
   "scripts": {
-    "test": "file ffmpeg | grep -qF \"Mach-O\"",
+    "test": "file ffprobe | grep -qF \"Mach-O\"",
     "prepublish": "npm test",
     "upload": "npm publish --access public"
   },
   "keywords": [
-    "ffmpeg",
+    "ffprobe",
     "binary",
     "darwin",
     "x64"
@@ -20,6 +20,6 @@
   "cpu": [
     "x64"
   ],
-  "author": "Kristoffer Lundén <kristoffer.lunden@gmail.com>",
+  "author": "Oliver Sayers <talk@savagecore.eu>",
   "license": "LGPL-2.1"
 }
