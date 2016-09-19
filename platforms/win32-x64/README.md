@@ -1,4 +1,3 @@
-Do not use directly, use ffmpeg-installer:
+Do not use directly, use ffprobe-installer:
 
-    npm install --save @ffmpeg-installer/ffmpeg
-    
+    npm install --save @ffprobe-installer/ffprobe
