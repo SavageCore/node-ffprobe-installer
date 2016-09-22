@@ -53,3 +53,7 @@ For version updates, submit issue or pull request.
 In every updated `platforms/*` directory:
 
     npm run upload
+
+## See also
+
+* [node-ffmpeg-installer](https://www.npmjs.com/package/@ffmpeg-installer/ffmpeg) - This project is a fork of ffmpeg-installer
