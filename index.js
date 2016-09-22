@@ -1,22 +1,34 @@
 'use strict';
 
-const os = require('os');
-const fs = require('fs');
-const path = require('path');
+var os = require('os');
+var fs = require('fs');
+var path = require('path');
 
-const platform = os.platform() + '-' + os.arch();
+var verifyFile = require('./lib/verify-file');
 
-const packageName = '@ffprobe-installer/' + platform;
-const version = require('./package.json').optionalDependencies[packageName];
+var platform = os.platform() + '-' + os.arch();
+
+var packageName = '@ffprobe-installer/' + platform;
+var version = require('./package.json').optionalDependencies[packageName];
 
 if (!version) {
     console.error('Unsupported platform/architecture:', platform);
     process.exit(1);
 }
 
-const binary = os.platform() === 'win32' ? 'ffprobe.exe' : 'ffprobe';
+var binary = os.platform() === 'win32' ? 'ffprobe.exe' : 'ffprobe';
 
-const ffprobePath = path.resolve(__dirname, '..', platform, binary);
+var npm3Path = path.resolve(__dirname, '..', platform, binary);
+var npm2Path = path.resolve(__dirname, 'node_modules', '@ffprobe-installer', platform, binary);
+
+var ffprobePath;
+if (verifyFile(npm3Path)) {
+    ffprobePath = npm3Path;
+} else if (verifyFile(npm2Path)) {
+    ffprobePath = npm2Path;
+} else {
+    throw 'Could not find ffprobePath executable, tried "' + npm3Path + '" and "' + npm2Path + '"';
+}
 
 module.exports = {
     path: ffprobePath,
