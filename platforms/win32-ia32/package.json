@@ -1,8 +1,8 @@
 {
   "name": "@ffprobe-installer/win32-ia32",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "Windows FFprobe binary used by ffprobe-installer",
-  "homepage": "https://ffmpeg.zeranoe.com/builds/",
+  "homepage": "https://ffmpeg.zeranoe.com/builds/win32/static/",
   "scripts": {
     "test": "file ffprobe.exe | grep -qF \"PE32\"",
     "prepublish": "npm test",
@@ -21,5 +21,6 @@
     "ia32"
   ],
   "author": "Oliver Sayers <talk@savagecore.eu>",
-  "license": "LGPL-2.1"
+  "license": "LGPL-2.1",
+	"ffprobe": "20161108-1bbb18f"
 }

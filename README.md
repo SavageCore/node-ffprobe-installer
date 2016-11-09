@@ -26,7 +26,7 @@ const ffprobe = spawn('ffprobePath', args);
 ffprobe.on('exit', onExit);
 ```
 
-### fluent-ffmpeg
+### [fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg)
 
 ```javascript
 const ffprobePath = require('@ffprobe-installer/ffprobe').path;
@@ -42,9 +42,10 @@ To automatically choose the binary to install, [optionalDependencies](https://do
 
 Downloaded from the sources listed at [ffmpeg.org](https://ffmpeg.org/download.html):
 
-* Linux (v3.1.3): https://www.johnvansickle.com/ffmpeg/
-* Mac OS/X (v3.1.3): https://evermeet.cx/ffmpeg/
-* Windows (v3.0.1): https://ffmpeg.zeranoe.com/builds/
+* Linux (20161109-g1bbb18f): https://www.johnvansickle.com/ffmpeg/
+* Mac OS/X (82222-gcee1f4c): https://evermeet.cx/ffmpeg/
+* Windows 32-bit (20161108-1bbb18f): https://ffmpeg.zeranoe.com/builds/win32/static/
+* Windows 64-bit (20161108-1bbb18f): https://ffmpeg.zeranoe.com/builds/win64/static/
 
 For version updates, submit issue or pull request.
 
