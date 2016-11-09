@@ -25,13 +25,13 @@ var npm2Binary = path.join(npm2Path, binary);
 var npm3Package = path.join(npm3Path, 'package.json');
 var npm2Package = path.join(npm2Path, 'package.json');
 
-var ffmpegPath, packageJson;
+var ffprobePath, packageJson;
 
 if (verifyFile(npm3Binary)) {
-    ffmpegPath = npm3Binary;
+    ffprobePath = npm3Binary;
     packageJson = require(npm3Package);
 } else if (verifyFile(npm2Binary)) {
-    ffmpegPath = npm2Binary;
+    ffprobePath = npm2Binary;
     packageJson = require(npm2Package);
 } else {
     throw 'Could not find ffprobe executable, tried "' + npm3Binary + '" and "' + npm2Binary + '"';
@@ -41,7 +41,7 @@ var version = packageJson.ffprobe || packageJson.version;
 var url = packageJson.homepage;
 
 module.exports = {
-    path: ffmpegPath,
+    path: ffprobePath,
     version: version,
     url: url
 };
