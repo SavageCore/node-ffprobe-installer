@@ -1,11 +1,12 @@
 {
   "name": "@ffprobe-installer/linux-ia32",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Linux FFmpeg binary used by ffprobe-installer",
   "homepage": "https://www.johnvansickle.com/ffmpeg/",
   "scripts": {
     "test": "file ffprobe | grep -qF \"ELF 32-bit\"",
     "prepublish": "npm test",
+    "postinstall": "chmod u+x ffprobe",
     "upload": "npm publish --access public"
   },
   "keywords": [
