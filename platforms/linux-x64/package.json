@@ -6,6 +6,7 @@
   "scripts": {
     "test": "file ffprobe | grep -qF \"ELF 64-bit\"",
     "prepublish": "npm test",
+    "postinstall": "chmod u+x ffprobe",
     "upload": "npm publish --access public"
   },
   "keywords": [
