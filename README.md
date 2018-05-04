@@ -4,7 +4,7 @@ Platform independent binary installer of [FFprobe](https://ffmpeg.org/) for node
 
 Installs a binary of `ffprobe` for the current platform and provides a path and version. Supports Linux, Windows and Mac OS/X.
 
-A combination of package.json fields `optionalDependencies`, `cpu`, and `os` let's the installer only download the binary for the current platform. See also "Warnings during install", below.
+A combination of package.json fields `optionalDependencies`, `cpu`, and `os` let's the installer only download the binary for the current platform. See also [Warnings during install](https://github.com/SavageCore/node-ffprobe-installer/blob/master/README.md#warnings-during-install).
 
 ## Install
 
