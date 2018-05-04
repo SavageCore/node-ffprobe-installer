@@ -36,7 +36,7 @@ ffmpeg.setFfprobePath(ffprobePath);
 
 ## Warnings during install
 
-To automatically choose the binary to install, [optionalDependencies](https://docs.npmjs.com/files/package.json#optionaldependencies) are used. This currently outputs warnings in the console, an issue that is [tracked by the npm team here](https://github.com/npm/npm/issues/9567).
+To automatically choose the binary to install, [optionalDependencies](https://docs.npmjs.com/files/package.json#optionaldependencies) are used. This currently outputs warnings in the console, an issue for that is [tracked by the npm team here](https://github.com/npm/npm/issues/9567).
 
 ## The binaries
 
