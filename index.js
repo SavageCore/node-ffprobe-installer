@@ -1,47 +1,47 @@
 'use strict';
 
-var os = require('os');
-var fs = require('fs');
-var path = require('path');
+const os = require('os');
+const path = require('path');
 
-var verifyFile = require('./lib/verify-file');
+const verifyFile = require('./lib/verify-file');
 
-var platform = os.platform() + '-' + os.arch();
+const platform = os.platform() + '-' + os.arch();
 
-var packageName = '@ffprobe-installer/' + platform;
+const packageName = '@ffprobe-installer/' + platform;
 
 if (!require('./package.json').optionalDependencies[packageName]) {
-    throw 'Unsupported platform/architecture: ' + platform;
+	throw new Error('Unsupported platform/architecture: ' + platform);
 }
 
-var binary = os.platform() === 'win32' ? 'ffprobe.exe' : 'ffprobe';
+const binary = os.platform() === 'win32' ? 'ffprobe.exe' : 'ffprobe';
 
-var npm3Path = path.resolve(__dirname, '..', platform);
-var npm2Path = path.resolve(__dirname, 'node_modules', '@ffprobe-installer', platform);
+const npm3Path = path.resolve(__dirname, '..', platform);
+const npm2Path = path.resolve(__dirname, 'node_modules', '@ffprobe-installer', platform);
 
-var npm3Binary = path.join(npm3Path, binary);
-var npm2Binary = path.join(npm2Path, binary);
+const npm3Binary = path.join(npm3Path, binary);
+const npm2Binary = path.join(npm2Path, binary);
 
-var npm3Package = path.join(npm3Path, 'package.json');
-var npm2Package = path.join(npm2Path, 'package.json');
+const npm3Package = path.join(npm3Path, 'package.json');
+const npm2Package = path.join(npm2Path, 'package.json');
 
-var ffprobePath, packageJson;
+let ffprobePath;
+let packageJson;
 
 if (verifyFile(npm3Binary)) {
-    ffprobePath = npm3Binary;
-    packageJson = require(npm3Package);
+	ffprobePath = npm3Binary;
+	packageJson = require(npm3Package);
 } else if (verifyFile(npm2Binary)) {
-    ffprobePath = npm2Binary;
-    packageJson = require(npm2Package);
+	ffprobePath = npm2Binary;
+	packageJson = require(npm2Package);
 } else {
-    throw 'Could not find ffprobe executable, tried "' + npm3Binary + '" and "' + npm2Binary + '"';
+	throw new Error('Could not find ffprobe executable, tried "' + npm3Binary + '" and "' + npm2Binary + '"');
 }
 
-var version = packageJson.ffprobe || packageJson.version;
-var url = packageJson.homepage;
+const version = packageJson.ffprobe || packageJson.version;
+const url = packageJson.homepage;
 
 module.exports = {
-    path: ffprobePath,
-    version: version,
-    url: url
+	path: ffprobePath,
+	version,
+	url
 };

@@ -3,8 +3,9 @@
   "version": "1.0.9",
   "main": "index.js",
   "scripts": {
-    "lint": "jshint *.js",
-    "preversion": "npm run lint"
+    "lint": "xo",
+    "preversion": "npm run lint",
+    "test": "npm run lint"
   },
   "keywords": [
     "ffprobe",
@@ -21,7 +22,7 @@
     "@ffprobe-installer/win32-x64": "4.0.2"
   },
   "devDependencies": {
-    "jshint": "^2.9.3"
+    "xo": "^0.20.3"
   },
   "repository": {
     "type": "git",
