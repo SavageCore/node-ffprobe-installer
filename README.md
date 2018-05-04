@@ -42,10 +42,10 @@ To automatically choose the binary to install, [optionalDependencies](https://do
 
 Downloaded from the sources listed at [ffmpeg.org](https://ffmpeg.org/download.html):
 
-* Linux (20161109-g1bbb18f): https://www.johnvansickle.com/ffmpeg/
-* Mac OS/X (82222-gcee1f4c): https://evermeet.cx/ffmpeg/
-* Windows 32-bit (20161108-1bbb18f): https://ffmpeg.zeranoe.com/builds/win32/static/
-* Windows 64-bit (20161108-1bbb18f): https://ffmpeg.zeranoe.com/builds/win64/static/
+* Linux (20180429-g19c3df0cd): https://www.johnvansickle.com/ffmpeg/
+* Mac OS/X (90936-gdc7a8f7310): https://evermeet.cx/ffmpeg/
+* Windows 32-bit (20180102-41e51fb): https://ffmpeg.zeranoe.com/builds/win32/static/
+* Windows 64-bit (20180102-41e51fb): https://ffmpeg.zeranoe.com/builds/win64/static/
 
 For version updates, submit issue or pull request.
 
