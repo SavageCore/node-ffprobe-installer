@@ -1,4 +1,5 @@
-# node-ffprobe-installer
+# node-ffprobe-installer 
+[![npm](https://img.shields.io/npm/dt/@ffprobe-installer/ffprobe.svg?style=flat-square)](https://www.npmjs.com/package/@ffprobe-installer/ffprobe) [![npm](https://img.shields.io/npm/v/@ffprobe-installer/ffprobe.svg?style=flat-square)](https://www.npmjs.com/package/@ffprobe-installer/ffprobe?activeTab=versions) [![xo](https://img.shields.io/badge/code%20style-XO-60CFBE.svg?longCache=true&style=flat-square&logo=)](https://github.com/xojs/xo)
 
 Platform independent binary installer of [FFprobe](https://ffmpeg.org/) for node projects. Useful for tools that should "just work" on multiple environments.
 
