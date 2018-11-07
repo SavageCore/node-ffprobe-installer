@@ -1,0 +1,31 @@
+build: off
+
+os: unstable
+
+platform:
+  - x86
+  - x64
+
+skip_tags: true
+
+environment:
+  matrix:
+    - nodejs_version: "10"
+    - nodejs_version: "9"
+    - nodejs_version: "8"
+    - nodejs_version: "6"
+
+cache:
+  - node_modules -> package.json
+
+install:
+  - ps: Install-Product node $env:nodejs_version $env:platform
+  - npm install -g npm
+  - npm install
+
+before_test:
+  - node --version
+  - npm --version
+
+test_script:
+  - npm test

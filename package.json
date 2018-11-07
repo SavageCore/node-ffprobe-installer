@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "xo",
-    "preversion": "npm run lint",
-    "test": "npm run lint"
+    "preversion": "npm run test",
+    "test": "xo && nyc ava && nyc report --reporter=text-lcov > coverage.lcov && codecov -t 54b3d620-a296-4d71-a717-c3e6e24ae9d9"
   },
   "keywords": [
     "ffprobe",
@@ -22,6 +22,10 @@
     "@ffprobe-installer/win32-x64": "4.0.2"
   },
   "devDependencies": {
+    "ava": "1.0.0-beta.4",
+    "codecov": "^3.0.1",
+    "execa": "^0.10.0",
+    "nyc": "^11.7.1",
     "xo": "^0.20.3"
   },
   "repository": {
