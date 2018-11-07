@@ -1,6 +1,9 @@
 # node-ffprobe-installer 
 [![npm](https://img.shields.io/npm/dt/@ffprobe-installer/ffprobe.svg?style=flat-square)](https://www.npmjs.com/package/@ffprobe-installer/ffprobe) [![npm](https://img.shields.io/npm/v/@ffprobe-installer/ffprobe.svg?style=flat-square)](https://www.npmjs.com/package/@ffprobe-installer/ffprobe?activeTab=versions) [![xo](https://img.shields.io/badge/code%20style-XO-60CFBE.svg?longCache=true&style=flat-square&logo=)](https://github.com/xojs/xo)
 
+[![Travis](https://img.shields.io/travis/SavageCore/node-ffprobe-installer.svg?style=flat-square)](https://travis-ci.org/SavageCore/node-ffprobe-installer/) [![AppVeyor](https://img.shields.io/appveyor/ci/SavageCore/node-ffprobe-installer.svg?style=flat-square)](https://ci.appveyor.com/project/SavageCore/node-ffprobe-installer) [![Codecov](https://img.shields.io/codecov/c/github/SavageCore/node-ffprobe-installer.svg?style=flat-square)](https://codecov.io/gh/SavageCore/node-ffprobe-installer/) [![Tidelift](https://tidelift.com/badges/github/SavageCore/node-ffprobe-installer?style=flat-square)](https://tidelift.com/repo/github/SavageCore/node-ffprobe-installer/)
+
+
 Platform independent binary installer of [FFprobe](https://ffmpeg.org/) for node projects. Useful for tools that should "just work" on multiple environments.
 
 Installs a binary of `ffprobe` for the current platform and provides a path and version. Supports Linux, Windows 7+ and MacOS 10.9+.

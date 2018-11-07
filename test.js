@@ -1,0 +1,19 @@
+import test from 'ava';
+
+const execa = require('execa');
+
+const m = require('.');
+
+test('returns path', t => {
+	t.truthy(m.path);
+});
+
+test('returns version', t => {
+	t.truthy(m.version);
+});
+
+test('spawns', async t => {
+	const result = await execa(m.path, ['-version']);
+	t.falsy(result.stderr);
+	t.regex(result.stdout, /ffprobe version/g);
+});
