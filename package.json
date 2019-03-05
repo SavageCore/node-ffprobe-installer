@@ -22,7 +22,7 @@
     "@ffprobe-installer/win32-x64": "4.0.2"
   },
   "devDependencies": {
-    "ava": "1.0.0-rc.2",
+    "ava": "1.2.1",
     "codecov": "^3.0.1",
     "execa": "^1.0.0",
     "executable": "^4.1.1",
