@@ -50,6 +50,17 @@ If you get permissions issues, try adding a .npmrc file with the following:
 
 See [node-ffmpeg-installer/issues/21](https://github.com/kribblo/node-ffmpeg-installer/issues/21)
 
+### Wrong path under Electron with Asar enabled
+
+It's a [known issue](https://github.com/electron-userland/electron-packager/issues/740) that Asar breaks native paths. As a workaround, if you use Asar, you can do something like this:
+
+```javascript
+const ffprobePath = require('@ffprobe-installer/ffprobe').path.replace(
+	'app.asar',
+	'app.asar.unpacked'
+);
+```
+
 ## The binaries
 
 Downloaded from the sources listed at [ffmpeg.org](https://ffmpeg.org/download.html):
