@@ -1,26 +1,26 @@
 {
-  "name": "@ffprobe-installer/win32-ia32",
-  "version": "4.0.2",
-  "description": "Windows FFprobe binary used by ffprobe-installer",
-  "homepage": "https://ffmpeg.zeranoe.com/builds/win32/static/",
-  "scripts": {
-    "test": "file ffprobe.exe | grep -qF \"PE32\"",
-    "prepublish": "npm test",
-    "upload": "npm publish --access public"
-  },
-  "keywords": [
-    "ffprobe",
-    "binary",
-    "win32",
-    "ia32"
-  ],
-  "os": [
-    "win32"
-  ],
-  "cpu": [
-    "ia32"
-  ],
-  "author": "Oliver Sayers <talk@savagecore.eu>",
-  "license": "LGPL-2.1",
-	"ffprobe": "20180102-41e51fb"
+	"name": "@ffprobe-installer/win32-ia32",
+	"version": "4.1.0",
+	"description": "Windows FFprobe binary used by ffprobe-installer",
+	"homepage": "https://ffmpeg.zeranoe.com/builds/win32/static/",
+	"scripts": {
+		"test": "file ffprobe.exe | grep -qF \"PE32\"",
+		"prepublish": "npm test",
+		"upload": "npm publish --access public"
+	},
+	"keywords": [
+		"ffprobe",
+		"binary",
+		"win32",
+		"ia32"
+	],
+	"os": [
+		"win32"
+	],
+	"cpu": [
+		"ia32"
+	],
+	"author": "Oliver Sayers <talk@savagecore.eu>",
+	"license": "LGPL-2.1",
+	"ffprobe": "20190529-d903c09"
 }
