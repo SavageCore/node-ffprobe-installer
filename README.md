@@ -42,6 +42,8 @@ ffmpeg.setFfprobePath(ffprobePath);
 
 To automatically choose the binary to install, [optionalDependencies](https://docs.npmjs.com/files/package.json#optionaldependencies) are used. This currently outputs warnings in the console, an issue for that is [tracked by the npm team here](https://github.com/npm/npm/issues/9567).
 
+## Known Issues
+
 ### AWS and/or Elastic Beanstalk
 
 If you get permissions issues, try adding a .npmrc file with the following:
