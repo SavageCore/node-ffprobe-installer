@@ -26,7 +26,7 @@ console.log(ffprobe.path, ffprobe.version);
 ```javascript
 const ffprobePath = require('@ffprobe-installer/ffprobe').path;
 const spawn = require('child_process').spawn;
-const ffprobe = spawn('ffprobePath', args);
+const ffprobe = spawn(ffprobePath, args);
 ffprobe.on('exit', onExit);
 ```
 
