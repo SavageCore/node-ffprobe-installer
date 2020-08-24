@@ -1,4 +1,4 @@
-import test from 'ava';
+const test = require('ava');
 
 const executable = require('executable');
 const execa = require('execa');
