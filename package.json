@@ -29,12 +29,12 @@
 		"@ffprobe-installer/win32-x64": "4.1.0"
 	},
 	"devDependencies": {
-		"ava": "1.4.1",
-		"codecov": "^3.0.1",
-		"execa": "^1.0.0",
+		"ava": "^3.12.1",
+		"codecov": "^3.7.2",
+		"execa": "^4.0.3",
 		"executable": "^4.1.1",
-		"nyc": "^14.1.0",
-		"xo": "^0.24.0"
+		"nyc": "^15.1.0",
+		"xo": "^0.33.0"
 	},
 	"repository": {
 		"type": "git",
