@@ -19,7 +19,7 @@
 		"linux"
 	],
 	"cpu": [
-		"x64"
+		"arm"
 	],
 	"author": "Oliver Sayers <talk@savagecore.eu>",
 	"license": "LGPL-2.1",
