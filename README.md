@@ -71,7 +71,7 @@ Downloaded from the sources listed at [ffmpeg.org](https://ffmpeg.org/download.h
 - MacOS (93939-g819ed1df94): https://evermeet.cx/ffmpeg/
 - Windows 32-bit (20190529-d903c09): https://ffmpeg.zeranoe.com/builds/win32/static/
 - Windows 64-bit (20190529-d903c09): https://ffmpeg.zeranoe.com/builds/win64/static/
-
+- Linux ARM (release: 4.3.1) :   https://www.johnvansickle.com/ffmpeg/
 For version updates, submit issue or pull request.
 
 ## Upload new versions
