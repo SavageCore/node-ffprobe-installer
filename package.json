@@ -23,6 +23,7 @@
 		"@ffprobe-installer/darwin-x64": "4.1.0",
 		"@ffprobe-installer/linux-ia32": "4.1.0",
 		"@ffprobe-installer/linux-x64": "4.1.0",
+		"@ffprobe-installer/linux-arm64": "4.3.1",
 		"@ffprobe-installer/win32-ia32": "4.1.0",
 		"@ffprobe-installer/win32-x64": "4.1.0"
 	},
