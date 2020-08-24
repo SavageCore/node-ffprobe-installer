@@ -1,0 +1,27 @@
+{
+	"name": "@ffprobe-installer/linux-arm64",
+	"version": "4.1.0",
+	"description": "Linux FFmpeg binary used by ffprobe-installer",
+	"homepage": "https://www.johnvansickle.com/ffmpeg/",
+	"scripts": {
+		"test": "file ffprobe | grep -qF \"ELF 64-bit\"",
+		"prepublish": "npm test",
+		"postinstall": "chmod u+x ffprobe",
+		"upload": "npm publish --access public"
+	},
+	"keywords": [
+		"ffprobe",
+		"binary",
+		"linux",
+		"x64"
+	],
+	"os": [
+		"linux"
+	],
+	"cpu": [
+		"x64"
+	],
+	"author": "Oliver Sayers <talk@savagecore.eu>",
+	"license": "LGPL-2.1",
+	"ffprobe": "20190527-g9b069eb14e"
+}
