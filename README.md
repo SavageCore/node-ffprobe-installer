@@ -1,6 +1,6 @@
 # node-ffprobe-installer
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![npm](https://img.shields.io/npm/dt/@ffprobe-installer/ffprobe.svg?style=flat-square)](https://www.npmjs.com/package/@ffprobe-installer/ffprobe) [![npm](https://img.shields.io/npm/v/@ffprobe-installer/ffprobe.svg?style=flat-square)](https://www.npmjs.com/package/@ffprobe-installer/ffprobe?activeTab=versions) [![xo](https://img.shields.io/badge/code%20style-XO-60CFBE.svg?longCache=true&style=flat-square&logo=)](https://github.com/xojs/xo)
@@ -100,6 +100,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://jonasdautel.dev"><img src="https://avatars3.githubusercontent.com/u/16684499?v=4" width="100px;" alt=""/><br /><sub><b>Jonas Dautel</b></sub></a><br /><a href="https://github.com/SavageCore/node-ffprobe-installer/commits?author=SNRSE" title="Code">💻</a></td>
     <td align="center"><a href="https://kikobeats.com"><img src="https://avatars2.githubusercontent.com/u/2096101?v=4" width="100px;" alt=""/><br /><sub><b>Kiko Beats</b></sub></a><br /><a href="https://github.com/SavageCore/node-ffprobe-installer/commits?author=Kikobeats" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/kaandok"><img src="https://avatars0.githubusercontent.com/u/472836?v=4" width="100px;" alt=""/><br /><sub><b>Kaan Ozdokmeci</b></sub></a><br /><a href="https://github.com/SavageCore/node-ffprobe-installer/commits?author=kaandok" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/sw360cab"><img src="https://avatars0.githubusercontent.com/u/777866?v=4" width="100px;" alt=""/><br /><sub><b>Sergio Maria Matone</b></sub></a><br /><a href="https://github.com/SavageCore/node-ffprobe-installer/commits?author=sw360cab" title="Code">💻</a></td>
   </tr>
 </table>
 
