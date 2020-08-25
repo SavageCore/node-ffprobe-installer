@@ -22,6 +22,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "kaandok",
+      "name": "Kaan Ozdokmeci",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/472836?v=4",
+      "profile": "https://github.com/kaandok",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
