@@ -7,7 +7,11 @@ const verifyFile = require('./lib/verify-file');
 
 const platform = os.platform() + '-' + os.arch();
 
-const packageName = '@ffprobe-installer/' + platform;
+let packageName = '@ffprobe-installer/' + platform;
+
+if (platform === 'darwin-arm64') {
+	packageName = 'ffprobe-darwin-arm64';
+}
 
 if (!require('./package.json').optionalDependencies[packageName]) {
 	throw new Error('Unsupported platform/architecture: ' + platform);
