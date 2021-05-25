@@ -3,7 +3,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-[![npm](https://img.shields.io/npm/dt/@ffprobe-installer/ffprobe.svg?style=flat-square)](https://www.npmjs.com/package/@ffprobe-installer/ffprobe) [![npm](https://img.shields.io/npm/v/@ffprobe-installer/ffprobe.svg?style=flat-square)](https://www.npmjs.com/package/@ffprobe-installer/ffprobe?activeTab=versions) [![xo](https://img.shields.io/badge/code%20style-XO-60CFBE.svg?longCache=true&style=flat-square&logo=)](https://github.com/xojs/xo)
+[![npm](https://img.shields.io/npm/dt/node-ffprobe-installer.svg?style=flat-square)](https://www.npmjs.com/package/node-ffprobe-installer) [![npm](https://img.shields.io/npm/v/node-ffprobe-installer.svg?style=flat-square)](https://www.npmjs.com/package/@node-ffprobe-installer?activeTab=versions) [![xo](https://img.shields.io/badge/code%20style-XO-60CFBE.svg?longCache=true&style=flat-square&logo=)](https://github.com/xojs/xo)
 
 [![Travis](https://img.shields.io/travis/SavageCore/node-ffprobe-installer.svg?style=flat-square)](https://travis-ci.org/SavageCore/node-ffprobe-installer/) [![AppVeyor](https://img.shields.io/appveyor/ci/SavageCore/node-ffprobe-installer.svg?style=flat-square)](https://ci.appveyor.com/project/SavageCore/node-ffprobe-installer) [![Codecov](https://img.shields.io/codecov/c/github/SavageCore/node-ffprobe-installer.svg?style=flat-square)](https://codecov.io/gh/SavageCore/node-ffprobe-installer/) [![Tidelift](https://tidelift.com/badges/github/SavageCore/node-ffprobe-installer?style=flat-square)](https://tidelift.com/repo/github/SavageCore/node-ffprobe-installer/)
 
@@ -15,19 +15,19 @@ A combination of package.json fields `optionalDependencies`, `cpu`, and `os` let
 
 ## Install
 
-    npm install --save @ffprobe-installer/ffprobe
+    npm install --save node-ffprobe-installer
 
 ## Usage examples
 
 ```javascript
-const ffprobe = require('@ffprobe-installer/ffprobe');
+const ffprobe = require('node-ffprobe-installer');
 console.log(ffprobe.path, ffprobe.version);
 ```
 
 ### [process.spawn()](https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options)
 
 ```javascript
-const ffprobePath = require('@ffprobe-installer/ffprobe').path;
+const ffprobePath = require('node-ffprobe-installer').path;
 const spawn = require('child_process').spawn;
 const ffprobe = spawn(ffprobePath, args);
 ffprobe.on('exit', onExit);
@@ -36,7 +36,7 @@ ffprobe.on('exit', onExit);
 ### [fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg)
 
 ```javascript
-const ffprobePath = require('@ffprobe-installer/ffprobe').path;
+const ffprobePath = require('node-ffprobe-installer').path;
 const ffmpeg = require('fluent-ffmpeg');
 ffmpeg.setFfprobePath(ffprobePath);
 ```
@@ -60,7 +60,7 @@ See [node-ffmpeg-installer/issues/21](https://github.com/kribblo/node-ffmpeg-ins
 It's a [known issue](https://github.com/electron-userland/electron-packager/issues/740) that Asar breaks native paths. As a workaround, if you use Asar, you can do something like this:
 
 ```javascript
-const ffprobePath = require('@ffprobe-installer/ffprobe').path.replace(
+const ffprobePath = require('node-ffprobe-installer').path.replace(
 	'app.asar',
 	'app.asar.unpacked'
 );
@@ -86,7 +86,7 @@ In every updated `platforms/*` directory:
 
 ## See also
 
-- [node-ffmpeg-installer](https://www.npmjs.com/package/@ffmpeg-installer/ffmpeg) - This project is a fork of ffmpeg-installer
+- [node-ffmpeg-installer](https://www.npmjs.com/package/node-ffprobe-installer/ffmpeg) - This project is a fork of @ffmpeg-installer/ffprobe
 
 ## Contributors ✨
 
