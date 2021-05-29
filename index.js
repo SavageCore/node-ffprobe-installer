@@ -21,7 +21,7 @@ const binary = os.platform() === 'win32' ? 'ffprobe.exe' : 'ffprobe';
 
 let appFolder = path.dirname(process.pkg ? process.execPath : (require.main ? require.main.filename : process.argv[0]));
 
-const npm3Path = path.resolve(appFolder, 'node_modules', packageName);
+const npm3Path = path.resolve(appFolder, '..', 'node_modules', packageName);
 const npm2Path = path.resolve(appFolder, 'node_modules', packageName);
 
 const npm3Binary = path.join(npm3Path, binary);
