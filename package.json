@@ -34,7 +34,7 @@
 		"execa": "^4.0.3",
 		"executable": "^4.1.1",
 		"nyc": "^15.1.0",
-		"xo": "^0.33.0"
+		"xo": "^0.40.3"
 	},
 	"repository": {
 		"type": "git",
