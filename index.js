@@ -7,7 +7,7 @@ const verifyFile = require('./lib/verify-file');
 
 const platform = os.platform() + '-' + os.arch();
 
-const packageName = '@ffprobe-installer/' + platform;
+const packageName = platform === 'darwin-arm64' ? 'ffprobe-darwin-arm64' : '@ffprobe-installer/' + platform;
 
 if (!require('./package.json').optionalDependencies[packageName]) {
 	throw new Error('Unsupported platform/architecture: ' + platform);
@@ -15,8 +15,10 @@ if (!require('./package.json').optionalDependencies[packageName]) {
 
 const binary = os.platform() === 'win32' ? 'ffprobe.exe' : 'ffprobe';
 
-const npm3Path = path.resolve(__dirname, '..', platform);
-const npm2Path = path.resolve(__dirname, 'node_modules', '@ffprobe-installer', platform);
+const appFolder = path.dirname(process.pkg ? process.execPath : (require.main ? require.main.filename : process.argv[0]));
+
+const npm3Path = path.resolve(appFolder, '..', 'node_modules', packageName);
+const npm2Path = path.resolve(appFolder, 'node_modules', packageName);
 
 const npm3Binary = path.join(npm3Path, binary);
 const npm2Binary = path.join(npm2Path, binary);

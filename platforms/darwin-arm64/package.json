@@ -1,0 +1,27 @@
+{
+	"name": "ffprobe-darwin-arm64",
+	"version": "4.4.0",
+	"description": "Mac OS X FFmpeg binary used by ffprobe-installer",
+	"homepage": "https://formulae.brew.sh/formula/ffmpeg",
+	"scripts": {
+		"test": "file ffprobe | grep -qF \"Mach-O\"",
+		"prepublish": "npm test",
+		"postinstall": "chmod u+x ffprobe",
+		"upload": "npm publish --access public"
+	},
+	"keywords": [
+		"ffprobe",
+		"binary",
+		"darwin",
+		"arm64"
+	],
+	"os": [
+		"darwin"
+	],
+	"cpu": [
+		"arm64"
+	],
+	"author": "Honeyside",
+	"license": "LGPL-2.1",
+	"ffprobe": "4.4"
+}

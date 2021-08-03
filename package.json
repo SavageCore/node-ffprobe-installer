@@ -26,7 +26,8 @@
 		"@ffprobe-installer/linux-arm64": "4.3.2",
 		"@ffprobe-installer/linux-arm": "4.3.2",
 		"@ffprobe-installer/win32-ia32": "4.1.0",
-		"@ffprobe-installer/win32-x64": "4.1.0"
+		"@ffprobe-installer/win32-x64": "4.1.0",
+		"ffprobe-darwin-arm64": "4.4.0"
 	},
 	"devDependencies": {
 		"ava": "^3.12.1",
