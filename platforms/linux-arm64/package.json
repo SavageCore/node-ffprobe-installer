@@ -13,7 +13,7 @@
 		"ffprobe",
 		"binary",
 		"linux",
-		"x64"
+		"arm64"
 	],
 	"os": [
 		"linux"
