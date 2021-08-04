@@ -21,13 +21,13 @@
 		"platform"
 	],
 	"optionalDependencies": {
-		"@ffprobe-installer/darwin-x64": "4.1.0",
-		"@ffprobe-installer/linux-arm": "4.3.2",
-		"@ffprobe-installer/linux-arm64": "4.3.2",
-		"@ffprobe-installer/linux-ia32": "4.1.0",
-		"@ffprobe-installer/linux-x64": "4.1.0",
-		"@ffprobe-installer/win32-ia32": "4.1.0",
-		"@ffprobe-installer/win32-x64": "4.1.0"
+		"@ffprobe-installer/darwin-x64": "5.0.0",
+		"@ffprobe-installer/linux-arm": "5.0.0",
+		"@ffprobe-installer/linux-arm64": "5.0.0",
+		"@ffprobe-installer/linux-ia32": "5.0.0",
+		"@ffprobe-installer/linux-x64": "5.0.0",
+		"@ffprobe-installer/win32-ia32": "5.0.0",
+		"@ffprobe-installer/win32-x64": "5.0.0"
 	},
 	"devDependencies": {
 		"ava": "^3.12.1",
