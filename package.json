@@ -6,7 +6,7 @@
 		"lint": "xo",
 		"preversion": "npm run test",
 		"test": "xo && nyc ava && nyc report --reporter=text-lcov > coverage.lcov && codecov -t 54b3d620-a296-4d71-a717-c3e6e24ae9d9",
-		"prepare": "husky install"
+		"prepare": "husky install && shx rm -rf .git/hooks && shx ln -s ../.husky .git/hooks"
 	},
 	"keywords": [
 		"ffprobe",
@@ -36,6 +36,7 @@
 		"executable": "^4.1.1",
 		"husky": "^7.0.1",
 		"nyc": "^15.1.0",
+		"shx": "^0.3.3",
 		"xo": "^0.43.0"
 	},
 	"repository": {
