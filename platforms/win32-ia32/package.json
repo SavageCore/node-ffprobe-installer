@@ -5,7 +5,7 @@
 	"homepage": "https://github.com/sudo-nautilus/FFmpeg-Builds-Win32/",
 	"scripts": {
 		"test": "file ffprobe.exe | grep -qF \"PE32\"",
-		"prepublish": "npm test",
+		"prepare": "npm test",
 		"upload": "npm publish --access public"
 	},
 	"keywords": [
