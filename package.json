@@ -34,7 +34,7 @@
 		"execa": "^5.1.1",
 		"executable": "^4.1.1",
 		"nyc": "^15.1.0",
-		"xo": "^0.33.0"
+		"xo": "^0.43.0"
 	},
 	"repository": {
 		"type": "git",
@@ -43,5 +43,10 @@
 	"bugs": {
 		"url": "https://github.com/SavageCore/node-ffprobe-installer/issues"
 	},
-	"homepage": "https://github.com/SavageCore/node-ffprobe-installer#readme"
+	"homepage": "https://github.com/SavageCore/node-ffprobe-installer#readme",
+	"xo": {
+		"rules": {
+			"unicorn/prefer-module": 0
+		}
+	}
 }

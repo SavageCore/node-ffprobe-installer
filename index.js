@@ -1,9 +1,7 @@
-'use strict';
-
 const os = require('os');
 const path = require('path');
 
-const verifyFile = require('./lib/verify-file');
+const verifyFile = require('./lib/verify-file.js');
 
 const platform = os.platform() + '-' + os.arch();
 
@@ -43,5 +41,5 @@ const url = packageJson.homepage;
 module.exports = {
 	path: ffprobePath,
 	version,
-	url
+	url,
 };
