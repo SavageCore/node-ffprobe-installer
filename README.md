@@ -7,11 +7,11 @@
 
 [![Travis](https://img.shields.io/travis/SavageCore/node-ffprobe-installer.svg?style=flat-square)](https://travis-ci.org/SavageCore/node-ffprobe-installer/) [![AppVeyor](https://img.shields.io/appveyor/ci/SavageCore/node-ffprobe-installer.svg?style=flat-square)](https://ci.appveyor.com/project/SavageCore/node-ffprobe-installer) [![Codecov](https://img.shields.io/codecov/c/github/SavageCore/node-ffprobe-installer.svg?style=flat-square)](https://codecov.io/gh/SavageCore/node-ffprobe-installer/) [![Tidelift](https://tidelift.com/badges/github/SavageCore/node-ffprobe-installer?style=flat-square)](https://tidelift.com/repo/github/SavageCore/node-ffprobe-installer/)
 
-Platform independent binary installer of [FFprobe](https://ffmpeg.org/) for node projects. Useful for tools that should "just work" on multiple environments.
+Platform independent binary installer of [FFprobe](https://ffmpeg.org/) for node projects. Useful for tools that should "just work" in multiple environments.
 
-Installs a binary of `ffprobe` for the current platform and provides a path and version. Supports Linux, Windows 7+ and MacOS 10.9+.
+Installs a binary of `ffprobe` for the current platform and provides a path and version. Supports Linux, Windows 7+, and MacOS 10.9+.
 
-A combination of package.json fields `optionalDependencies`, `cpu`, and `os` let's the installer only download the binary for the current platform. See also [Warnings during install](https://github.com/SavageCore/node-ffprobe-installer/blob/master/README.md#warnings-during-install).
+A combination of package.json fields `optionalDependencies`, `cpu`, and `os` lets the installer only download the binary for the current platform. See also [Warnings during install](https://github.com/SavageCore/node-ffprobe-installer/blob/master/README.md#warnings-during-install).
 
 ## Install
 
@@ -108,4 +108,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
