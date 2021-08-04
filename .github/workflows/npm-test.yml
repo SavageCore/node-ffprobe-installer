@@ -27,12 +27,15 @@ jobs:
     name: Node ${{ matrix.node_version }} - ${{ matrix.architecture }} on ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
-      - name: Setup node and install latest npm
+      - name: Setup node
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node_version }}
           architecture: ${{ matrix.architecture }}
           cache: "npm"
-      - run: npm i -g npm
-      - run: npm ci
-      - run: npm test
+      - name: Install latest npm
+        run: npm i -g npm
+      - name: Clean install dependencies
+        run: npm ci
+      - name: Run tests
+        run: npm test
