@@ -21,7 +21,7 @@
 	"cpu": [
 		"x64"
 	],
-	"author": "Oliver Sayers <talk@savagecore.uk>",
+	"author": "Helmut K. C. Tessarek <kc+github@evermeet.cx> (https://github.com/tessus)",
 	"license": "GPL-3.0",
 	"ffprobe": "103117-g1f58503013"
 }

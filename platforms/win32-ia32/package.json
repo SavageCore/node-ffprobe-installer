@@ -20,7 +20,7 @@
 	"cpu": [
 		"ia32"
 	],
-	"author": "Oliver Sayers <talk@savagecore.uk>",
+	"author": "Nautilus <@sudo_nautilus> (https://github.com/sudo-nautilus)",
 	"license": "GPL-3.0",
 	"ffprobe": "20210804-7ab0207"
 }
