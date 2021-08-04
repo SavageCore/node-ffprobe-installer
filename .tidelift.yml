@@ -1,6 +1,0 @@
-ci:
-  platform:
-    npm:
-      argv:
-        tests:
-          unlicensed: skip
