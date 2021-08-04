@@ -43,5 +43,10 @@
 	"bugs": {
 		"url": "https://github.com/SavageCore/node-ffprobe-installer/issues"
 	},
-	"homepage": "https://github.com/SavageCore/node-ffprobe-installer#readme"
+	"homepage": "https://github.com/SavageCore/node-ffprobe-installer#readme",
+	"xo": {
+		"rules": {
+			"unicorn/prefer-module": 0
+		}
+	}
 }
