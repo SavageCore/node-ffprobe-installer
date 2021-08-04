@@ -1,7 +1,7 @@
 {
 	"name": "@ffprobe-installer/darwin-x64",
 	"version": "4.1.0",
-	"description": "Mac OS X FFmpeg binary used by ffprobe-installer",
+	"description": "macOS FFprobe binary used by ffprobe-installer",
 	"homepage": "https://evermeet.cx/ffmpeg/",
 	"scripts": {
 		"test": "file ffprobe | grep -qF \"Mach-O\"",
