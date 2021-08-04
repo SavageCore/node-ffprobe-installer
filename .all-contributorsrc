@@ -40,6 +40,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "xemle",
+      "name": "Sebastian",
+      "avatar_url": "https://avatars.githubusercontent.com/u/261850?v=4",
+      "profile": "https://github.com/xemle",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
