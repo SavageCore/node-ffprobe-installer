@@ -1,20 +1,24 @@
 const os = require('os');
 const path = require('path');
+const process = require('process');
 
 const verifyFile = require('./lib/verify-file.js');
 
-const platform = os.platform() + '-' + os.arch();
+const platform = process.env.npm_config_platform || os.platform();
+const arch = process.env.npm_config_arch || os.arch();
 
-const packageName = '@ffprobe-installer/' + platform;
+const target = platform + '-' + arch;
+
+const packageName = '@ffprobe-installer/' + target;
 
 if (!require('./package.json').optionalDependencies[packageName]) {
-	throw new Error('Unsupported platform/architecture: ' + platform);
+	throw new Error('Unsupported platform/architecture: ' + target);
 }
 
-const binary = os.platform() === 'win32' ? 'ffprobe.exe' : 'ffprobe';
+const binary = platform === 'win32' ? 'ffprobe.exe' : 'ffprobe';
 
-const npm3Path = path.resolve(__dirname, '..', platform);
-const npm2Path = path.resolve(__dirname, 'node_modules', '@ffprobe-installer', platform);
+const npm3Path = path.resolve(__dirname, '..', target);
+const npm2Path = path.resolve(__dirname, 'node_modules', '@ffprobe-installer', target);
 
 const npm3Binary = path.join(npm3Path, binary);
 const npm2Binary = path.join(npm2Path, binary);
