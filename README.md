@@ -72,7 +72,7 @@ Downloaded from the sources listed at [ffmpeg.org](https://ffmpeg.org/download.h
 
 - Linux (20210724-c253b18): https://www.johnvansickle.com/ffmpeg/
 - macOS (x64) (103117-g1f58503013): https://evermeet.cx/ffmpeg/
-- macOS (arm64): https://formulae.brew.sh/formula/ffmpeg
+- macOS (arm64) (4.4.1): https://formulae.brew.sh/formula/ffmpeg
 - Windows 32-bit (20210804-7ab0207): https://github.com/sudo-nautilus/FFmpeg-Builds-Win32/
 - Windows 64-bit (20210804-3b29864): https://www.gyan.dev/ffmpeg/builds/
 - Linux ARM (20210724-c253b18) :   https://www.johnvansickle.com/ffmpeg/
