@@ -27,7 +27,8 @@
 		"@ffprobe-installer/linux-ia32": "5.0.0",
 		"@ffprobe-installer/linux-x64": "5.0.0",
 		"@ffprobe-installer/win32-ia32": "5.0.0",
-		"@ffprobe-installer/win32-x64": "5.0.0"
+		"@ffprobe-installer/win32-x64": "5.0.0",
+		"@ffprobe-installer/darwin-arm64": "5.0.0"
 	},
 	"devDependencies": {
 		"ava": "^3.12.1",
