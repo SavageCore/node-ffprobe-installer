@@ -2,7 +2,7 @@
   "name": "@ffprobe-installer/darwin-arm64",
   "version": "5.0.1",
   "description": "Mac OS X FFmpeg binary used by ffprobe-installer",
-  "homepage": "https://formulae.brew.sh/formula/ffmpeg",
+  "homepage": "https://github.com/wongyiuhang",
   "scripts": {
     "test": "file ffprobe | grep -qF \"Mach-O\"",
     "prepublish": "npm test",
