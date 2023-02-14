@@ -1,6 +1,6 @@
-const os = require('os');
-const path = require('path');
-const process = require('process');
+const os = require('node:os');
+const path = require('node:path');
+const process = require('node:process');
 
 const verifyFile = require('./lib/verify-file.js');
 
