@@ -71,10 +71,10 @@ const ffprobePath = require('@ffprobe-installer/ffprobe').path.replace(
 Downloaded from the sources listed at [ffmpeg.org](https://ffmpeg.org/download.html):
 
 - Linux (armhf, arm64, ia32, x64) (20220910-c92edd9): https://www.johnvansickle.com/ffmpeg/
-- macOS (x64) (103117-g1f58503013): https://evermeet.cx/ffmpeg/
+- macOS (x64) (20230213-f8d6d0f): https://evermeet.cx/ffmpeg/
 - macOS (arm64) (4.4.1): contributed by [wongyiuhang](https://github.com/wongyiuhang)
 - Windows 32-bit (20230213-f8d6d0f): https://github.com/sudo-nautilus/FFmpeg-Builds-Win32/
-- Windows 64-bit (20210804-3b29864): https://www.gyan.dev/ffmpeg/builds/
+- Windows 64-bit (20230213-2296078): https://www.gyan.dev/ffmpeg/builds/
 
 For version updates, submit issue or pull request.
 
