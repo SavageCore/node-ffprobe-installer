@@ -9,7 +9,7 @@
 
 Platform independent binary installer of [FFprobe](https://ffmpeg.org/) for node projects. Useful for tools that should "just work" in multiple environments.
 
-Installs a binary of `ffprobe` for the current platform and provides a path and version. Supports Linux, Windows 7+, and MacOS 10.9+.
+Installs a standalone static binary of `ffprobe` for the current platform and provides a path and version. Supports Linux, Windows 7+, and MacOS 10.9+.
 
 A combination of package.json fields `optionalDependencies`, `cpu`, and `os` lets the installer only download the binary for the current platform. See also [Warnings during install](https://github.com/SavageCore/node-ffprobe-installer/blob/master/README.md#warnings-during-install).
 
@@ -72,7 +72,7 @@ Downloaded from the sources listed at [ffmpeg.org](https://ffmpeg.org/download.h
 
 - Linux (armhf, arm64, ia32, x64) (20210724-c253b18): https://www.johnvansickle.com/ffmpeg/
 - macOS (x64) (103117-g1f58503013): https://evermeet.cx/ffmpeg/
-- macOS (arm64) (4.4.1): https://formulae.brew.sh/formula/ffmpeg
+- macOS (arm64) (4.4.1): contributed by [wongyiuhang](https://github.com/wongyiuhang)
 - Windows 32-bit (20210804-7ab0207): https://github.com/sudo-nautilus/FFmpeg-Builds-Win32/
 - Windows 64-bit (20210804-3b29864): https://www.gyan.dev/ffmpeg/builds/
 
