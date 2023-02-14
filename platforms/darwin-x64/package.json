@@ -1,6 +1,6 @@
 {
 	"name": "@ffprobe-installer/darwin-x64",
-	"version": "5.0.0",
+	"version": "5.1.0",
 	"description": "macOS FFprobe binary used by ffprobe-installer",
 	"homepage": "https://evermeet.cx/ffmpeg/",
 	"scripts": {
@@ -23,5 +23,5 @@
 	],
 	"author": "Helmut K. C. Tessarek <kc+github@evermeet.cx> (https://github.com/tessus)",
 	"license": "GPL-3.0",
-	"ffprobe": "103117-g1f58503013"
+	"ffprobe": "20230213-f8d6d0f"
 }
