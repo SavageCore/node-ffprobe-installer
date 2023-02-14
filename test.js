@@ -1,24 +1,29 @@
 const test = require('ava');
 
-const executable = require('executable');
-const execa = require('execa');
+const main = async () => {
+	const {execa} = await import('execa');
 
-const m = require('.');
+	const executable = require('executable');
 
-test('returns path', t => {
-	t.truthy(m.path);
-});
+	const m = require('.');
 
-test('returns version', t => {
-	t.truthy(m.version);
-});
+	test('returns path', t => {
+		t.truthy(m.path);
+	});
 
-test('spawns', async t => {
-	const result = await execa(m.path, ['-version']);
-	t.falsy(result.stderr);
-	t.regex(result.stdout, /ffprobe version/g);
-});
+	test('returns version', t => {
+		t.truthy(m.version);
+	});
 
-test('is executable', async t => {
-	t.truthy(await executable(m.path));
-});
+	test('spawns', async t => {
+		const result = await execa(m.path, ['-version']);
+		t.falsy(result.stderr);
+		t.regex(result.stdout, /ffprobe version/g);
+	});
+
+	test('is executable', async t => {
+		t.truthy(await executable(m.path));
+	});
+};
+
+main();

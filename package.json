@@ -50,7 +50,8 @@
 	"homepage": "https://github.com/SavageCore/node-ffprobe-installer#readme",
 	"xo": {
 		"rules": {
-			"unicorn/prefer-module": 0
+			"unicorn/prefer-module": 0,
+			"unicorn/prefer-top-level-await": 0
 		}
 	}
 }
