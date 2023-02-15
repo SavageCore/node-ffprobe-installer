@@ -53,5 +53,8 @@
 			"unicorn/prefer-module": 0,
 			"unicorn/prefer-top-level-await": 0
 		}
+	},
+	"engines": {
+		"node": ">=14.21.2"
 	}
 }
