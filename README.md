@@ -1,6 +1,6 @@
 # node-ffprobe-installer
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![npm](https://img.shields.io/npm/dt/@ffprobe-installer/ffprobe.svg?style=flat-square)](https://www.npmjs.com/package/@ffprobe-installer/ffprobe) [![npm](https://img.shields.io/npm/v/@ffprobe-installer/ffprobe.svg?style=flat-square)](https://www.npmjs.com/package/@ffprobe-installer/ffprobe?activeTab=versions) [![xo](https://img.shields.io/badge/code%20style-XO-60CFBE.svg?longCache=true&style=flat-square&logo=)](https://github.com/xojs/xo)
@@ -98,13 +98,16 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="https://jonasdautel.dev"><img src="https://avatars3.githubusercontent.com/u/16684499?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jonas Dautel</b></sub></a><br /><a href="https://github.com/SavageCore/node-ffprobe-installer/commits?author=SNRSE" title="Code">💻</a></td>
-    <td align="center"><a href="https://kikobeats.com"><img src="https://avatars2.githubusercontent.com/u/2096101?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kiko Beats</b></sub></a><br /><a href="https://github.com/SavageCore/node-ffprobe-installer/commits?author=Kikobeats" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/kaandok"><img src="https://avatars0.githubusercontent.com/u/472836?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kaan Ozdokmeci</b></sub></a><br /><a href="https://github.com/SavageCore/node-ffprobe-installer/commits?author=kaandok" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/sw360cab"><img src="https://avatars0.githubusercontent.com/u/777866?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sergio Maria Matone</b></sub></a><br /><a href="https://github.com/SavageCore/node-ffprobe-installer/commits?author=sw360cab" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/xemle"><img src="https://avatars.githubusercontent.com/u/261850?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sebastian</b></sub></a><br /><a href="https://github.com/SavageCore/node-ffprobe-installer/commits?author=xemle" title="Code">💻</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://jonasdautel.dev"><img src="https://avatars3.githubusercontent.com/u/16684499?v=4?s=100" width="100px;" alt="Jonas Dautel"/><br /><sub><b>Jonas Dautel</b></sub></a><br /><a href="https://github.com/SavageCore/node-ffprobe-installer/commits?author=SNRSE" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://kikobeats.com"><img src="https://avatars2.githubusercontent.com/u/2096101?v=4?s=100" width="100px;" alt="Kiko Beats"/><br /><sub><b>Kiko Beats</b></sub></a><br /><a href="https://github.com/SavageCore/node-ffprobe-installer/commits?author=Kikobeats" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/kaandok"><img src="https://avatars0.githubusercontent.com/u/472836?v=4?s=100" width="100px;" alt="Kaan Ozdokmeci"/><br /><sub><b>Kaan Ozdokmeci</b></sub></a><br /><a href="https://github.com/SavageCore/node-ffprobe-installer/commits?author=kaandok" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/sw360cab"><img src="https://avatars0.githubusercontent.com/u/777866?v=4?s=100" width="100px;" alt="Sergio Maria Matone"/><br /><sub><b>Sergio Maria Matone</b></sub></a><br /><a href="https://github.com/SavageCore/node-ffprobe-installer/commits?author=sw360cab" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/xemle"><img src="https://avatars.githubusercontent.com/u/261850?v=4?s=100" width="100px;" alt="Sebastian"/><br /><sub><b>Sebastian</b></sub></a><br /><a href="https://github.com/SavageCore/node-ffprobe-installer/commits?author=xemle" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/wongyiuhang"><img src="https://avatars.githubusercontent.com/u/5416443?v=4?s=100" width="100px;" alt="Wong Yiu Hang"/><br /><sub><b>Wong Yiu Hang</b></sub></a><br /><a href="https://github.com/SavageCore/node-ffprobe-installer/commits?author=wongyiuhang" title="Code">💻</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
