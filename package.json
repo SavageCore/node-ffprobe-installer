@@ -7,7 +7,7 @@
 		"preversion": "npm run test",
 		"types": "tsc",
 		"test": "xo && nyc ava && nyc report --reporter=text-lcov > coverage.lcov && codecov -t 54b3d620-a296-4d71-a717-c3e6e24ae9d9",
-		"prepare": "husky install && shx rm -rf .git/hooks && shx ln -s ../.husky .git/hooks"
+		"prepare": "npm run types && husky install && shx rm -rf .git/hooks && shx ln -s ../.husky .git/hooks"
 	},
 	"types": "types/index.d.ts",
 	"keywords": [
