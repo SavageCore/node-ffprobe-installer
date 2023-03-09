@@ -42,6 +42,13 @@ if (verifyFile(npm3Binary)) {
 const version = packageJson.ffprobe || packageJson.version;
 const url = packageJson.homepage;
 
+/**
+* @type {{
+* 	path: string;
+* 	version: string;
+* 	url: string;
+* }}
+*/
 module.exports = {
 	path: ffprobePath,
 	version,
