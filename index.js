@@ -1,7 +1,6 @@
 const os = require('node:os');
 const path = require('node:path');
 const process = require('node:process');
-
 const verifyFile = require('./lib/verify-file.js');
 
 const platform = process.env.npm_config_platform || os.platform();
