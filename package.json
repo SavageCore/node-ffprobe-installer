@@ -21,7 +21,8 @@
 		"index.js",
 		"lib",
 		"platform",
-		"types"
+		"types",
+		"tsconfig.json"
 	],
 	"optionalDependencies": {
 		"@ffprobe-installer/darwin-arm64": "5.0.1",
