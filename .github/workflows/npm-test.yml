@@ -13,15 +13,15 @@ jobs:
           - macos-latest
           - windows-latest
         node_version:
-          - 14
           - 16
           - 18
+          - 20
         architecture:
           - x64
         # an extra windows-x86 run:
         include:
           - os: windows-latest
-            node_version: 14
+            node_version: 16
             architecture: x86
     name: Node ${{ matrix.node_version }} - ${{ matrix.architecture }} on ${{ matrix.os }}
     steps:
