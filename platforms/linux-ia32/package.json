@@ -1,6 +1,6 @@
 {
 	"name": "@ffprobe-installer/linux-ia32",
-	"version": "5.1.0",
+	"version": "5.2.0",
 	"description": "Linux FFprobe binary used by ffprobe-installer",
 	"homepage": "https://www.johnvansickle.com/ffmpeg/",
 	"scripts": {
@@ -23,5 +23,5 @@
 	],
 	"author": "johnvansickle (https://www.johnvansickle.com)",
 	"license": "GPL-3.0",
-	"ffprobe": "20220910-c92edd9"
+	"ffprobe": "20230721-c2b3861"
 }
