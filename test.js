@@ -1,4 +1,5 @@
 const test = require('ava');
+const verifyFile = require('./lib/verify-file.js');
 
 const main = async () => {
 	const {execa} = await import('execa');
@@ -23,6 +24,11 @@ const main = async () => {
 
 	test('is executable', async t => {
 		t.truthy(await executable(m.path));
+	});
+
+	test('verifies file', t => {
+		t.true(verifyFile(m.path));
+		t.falsy(verifyFile('foo'));
 	});
 };
 
