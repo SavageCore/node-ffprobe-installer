@@ -27,10 +27,10 @@
 	"optionalDependencies": {
 		"@ffprobe-installer/darwin-arm64": "5.0.1",
 		"@ffprobe-installer/darwin-x64": "5.1.0",
-		"@ffprobe-installer/linux-arm": "5.1.0",
-		"@ffprobe-installer/linux-arm64": "5.1.0",
-		"@ffprobe-installer/linux-ia32": "5.1.0",
-		"@ffprobe-installer/linux-x64": "5.1.0",
+		"@ffprobe-installer/linux-arm": "5.2.0",
+		"@ffprobe-installer/linux-arm64": "5.2.0",
+		"@ffprobe-installer/linux-ia32": "5.2.0",
+		"@ffprobe-installer/linux-x64": "5.2.0",
 		"@ffprobe-installer/win32-ia32": "5.1.0",
 		"@ffprobe-installer/win32-x64": "5.1.0"
 	},
