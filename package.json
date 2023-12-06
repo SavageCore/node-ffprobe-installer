@@ -35,7 +35,7 @@
 		"@ffprobe-installer/win32-x64": "5.1.0"
 	},
 	"devDependencies": {
-		"ava": "^5.2.0",
+		"ava": "^6.0.0",
 		"codecov": "^3.7.2",
 		"execa": "^8.0.1",
 		"executable": "^4.1.1",
