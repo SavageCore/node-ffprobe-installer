@@ -6,7 +6,7 @@ const main = async () => {
 
 	const executable = require('executable');
 
-	const m = require('.');
+	const m = require('./index.js');
 
 	test('returns path', t => {
 		t.truthy(m.path);
